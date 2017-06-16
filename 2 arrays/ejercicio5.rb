@@ -8,13 +8,12 @@ products = %w(Producto1 Producto2 Producto3 Producto4)
 prices = %w[1000 2000 1500 950]
 
 html = ''
-products.each do |i|
-  prices.each do |j|
+
+products.zip(prices) do |i, j|
   html += "<div class='product'>"
   html += "<p> #{i} </p>"
-  html += "<p> Precio: #{j} </p>"
+  html += "<p>Precio: #{j}</p>"
   html += "</div>\n"
-  end
 end
 
 puts html

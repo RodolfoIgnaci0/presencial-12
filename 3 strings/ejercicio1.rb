@@ -4,7 +4,7 @@
 # o string dado está contenido en éste.
 
 def metodo(cadena, caracter)
-  puts 'Incluye ó' if cadena.include? 'o'
+  puts "Incluye #{caracter}" if cadena.include? caracter
 end
 
 cadena = 'Hola Mundo!'
