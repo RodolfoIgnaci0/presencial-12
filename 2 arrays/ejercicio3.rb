@@ -9,7 +9,34 @@ print $a
 puts ''
 
 def uno
-  
+  for i in 0..$a.length
+    if $a[i].even?
+      print "#{$a[i]} "
+    end
+  end
 end
 
-uno
+def dos
+  suma = 0
+  $a.each do |iteracion|
+    suma += iteracion
+  end
+  puts suma
+end
+
+def tres
+  suma = 0
+  $a.each do |iteracion|
+    suma += iteracion
+  end
+  suma = suma.to_f / $a.length
+  puts suma
+end
+
+def cuatro
+  $a.each do |iteracion|
+    iteracion += 10
+    print "#{iteracion}  "
+  end
+end
+cuatro

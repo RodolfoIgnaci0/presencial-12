@@ -9,8 +9,12 @@ prices = %w[1000 2000 1500 950]
 
 html = ''
 products.each do |i|
+  prices.each do |j|
   html += "<div class='product'>"
+  html += "<p> #{i} </p>"
+  html += "<p> Precio: #{j} </p>"
   html += "</div>\n"
+  end
 end
 
 puts html
